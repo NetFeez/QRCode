@@ -1,5 +1,5 @@
-export const Info: {
-    [key: string]: {
+export namespace Info {
+    export interface version {
         totalCodewords: number,
         capacity: {
             L: { codewords: number, bits: number, numeric: number, alphanumeric: number, binary: number, kanji: number },
@@ -14,6 +14,9 @@ export const Info: {
             H: { blocks: number, codewords: number }
         }
     }
+}
+export const Info: {
+    [key: string]: Info.version
 } = {
     1: {
         totalCodewords: 26,
