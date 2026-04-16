@@ -4,7 +4,7 @@
   "main": "build/QR.js",
   "type": "module",
   "scripts": {
-    "compile-watch": "tsc --watch"
+    "compile": "bash scripts/compile.sh"
   },
   "keywords": [],
   "author": "NetFeez <netfeez.dev@gmail.com>",
